@@ -1,0 +1,362 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.clearfix {
+  clear: both;
+}
+p,span {
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  height: 650px;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+header .head {
+  padding-top: 25px;
+}
+header .head img {
+  float: left;
+}
+header .head nav {
+  float: right;
+}
+header .head nav ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+header .head nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+header .content {
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .content h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2%;
+}
+header .content p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+header .content button {
+  width: 180px;
+  border: 0;
+  outline: none;
+  padding: 20px;
+  font-size: 15px;
+  margin-left: 3%;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+
+}
+
+header .content button:first-of-type {
+  background: #fff;
+  color: #000;
+}
+header .content button:last-of-type {
+  background: #34f8ff;
+  color: #fff;
+}
+header .content button:first-of-type:hover {
+  background: #ddd;
+}
+header .content button:hover:last-of-type {
+  background: #67b4be;
+}
+header .footer {
+  width: 35px;
+  height: 60px;
+  position: absolute;
+  bottom: 20%;
+  left: 49.5%;
+  border: 2px solid #fff;
+  border-radius: 18px;
+}
+header .footer .scroll {
+  width: 5px;
+  height: 10px;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  top: 4px;
+  animation: scrolling 1s ease-in-out infinite;
+}
+@keyframes scrolling {
+  0% {
+    opacity: 0;
+    top: 0px;
+    background: red;
+  }
+  30% {
+    opacity: 1;
+    top: 20px;
+    background: #0011ff;
+  }
+  100% {
+    opacity: 0;
+    top: 45px;
+    background: red;
+  }
+}
+.befirst {
+  height: 606px;
+  background-image: url("../images/be-the-first-bg.jpg");
+  padding-top: 7.5%;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 15%;
+}
+.befirst .center h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+}
+.befirst .center p {
+  color: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+.befirst .img {
+  text-align: center;
+}
+.befirst .img img {
+  width: 400px;
+}
+.feature {
+  padding-bottom: 20%;
+}
+.feature .feat {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+}
+.feature .feat:nth-of-type(1) {
+  margin-left: 0;
+}
+.feature .feat hr {
+  height: 5px;
+  border: 0;
+}
+.feature .feat:nth-of-type(1) hr {
+  background-color: #6d3f96;
+}
+.feature .feat:nth-of-type(2) hr {
+  background-color: #70cbce;
+}
+.feature .feat:nth-of-type(3) hr {
+  background-color: #fdc05d;
+}
+.feature .feat h2 {
+  font-size: 18px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.feature .feat p {
+  color: #929496;
+}
+.pricing {
+  padding-top: 7.5%;
+  padding-bottom: 10%;
+  background-color: #70cbce;
+  height: auto;
+  text-align: center;
+}
+.pricing h2 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 2%;
+}
+.pricing p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 7.5%;
+}
+.pricing .flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.pricing .flex .item {
+  width: 33%;
+}
+.pricing .flex .item:nth-of-type(1),
+.pricing .flex .item:nth-of-type(3) {
+  margin-top: 3%;
+  z-index: 2;
+}
+.pricing .flex .item ul {
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  border-radius: 10px;
+
+  transition: all 0.5s ease-in-out;
+}
+.pricing .flex .item ul:hover {
+  margin-top: 15px;
+}
+.pricing .flex .item ul:hover .doller {
+  background-color: #333;
+}
+.pricing .flex .item ul .price {
+  background-color: #231f20;
+  padding: 20px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pricing .flex .item ul .doller {
+  background-color: #231f20;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing .flex .item ul .doller small {
+  font-weight: normal;
+  color: #929496;
+}
+.pricing .flex .item ul .list {
+  padding: 20px;
+  border: 1px dotted #e8eaea;
+  font-weight: bold;
+}
+.pricing .flex .item ul .content {
+  color: #929496;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.pricing .flex .item ul .btn {
+  padding: 17px;
+  color: #70cbce;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pricing .flex .item ul .btn:hover {
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.invite {
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: #f5f5f5;
+  text-align: center;
+}
+.invite i {
+  color: #70cbce;
+  border: 2px solid #70cbce;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 2%;
+}
+.invite h2 {
+  font-size: 40px;
+  margin-bottom: 2%;
+}
+.invite p {
+  margin-bottom: 2%;
+}
+.invite input {
+  display: block;
+  width: 300px;
+  margin: auto;
+  height: 50px;
+  border: 0;
+  padding: 10px;
+  outline: 0;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.invite input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.invite button {
+  width: 200px;
+  height: 50px;
+  background: #70cbce;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2.5px;
+}
+.invite button:hover{
+  background: #34f8ff;
+}
+.info {
+  padding-top: 6%;
+  padding-bottom: 7.5%;
+}
+.info .desc {
+  width: 70%;
+  margin: auto;
+  
+} 
+.info .desc .img  {
+  width: 20%;
+  float: left;
+  
+}
+.info .desc .information {
+  width: 70%;
+  float: left;
+}
+.info hr {
+  height: 2px;
+  border: 0;
+  background: #e8eaea;
+}
+footer {
+  padding-bottom: 5%;
+}
+footer .left {
+  float: left;
+} 
+footer .left span {
+  padding-right:10px ;
+}
+footer .right {
+  float: right;
+} 
+footer .right span {
+  color: #ccc;
+}
